@@ -1,4 +1,4 @@
-/* implement currency class. */
+/* import the class currency. */
 import Currency from './3-currency';
 
 export default class Pricing {
@@ -7,7 +7,9 @@ export default class Pricing {
     this.currency = currency;
   }
 
-  get amount() {return this._amount;}
+  get amount() {
+    return this._amount;
+  }
 
   set amount(value) {
     if (typeof value !== 'number') {
@@ -16,7 +18,9 @@ export default class Pricing {
     this._amount = value;
   }
 
-  get currency() {return this._currency;}
+  get currency() {
+    return this._currency;
+  }
 
   set currency(value) {
     if (!(value instanceof Currency)) {
