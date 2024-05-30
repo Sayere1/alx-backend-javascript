@@ -1,4 +1,4 @@
-/* Fix this code and make it work */
+/* Fix this code and make it work. */
 export class HolbertonClass {
   constructor(year, location) {
     this._year = year;
