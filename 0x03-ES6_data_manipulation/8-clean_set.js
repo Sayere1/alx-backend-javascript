@@ -5,9 +5,7 @@
  */
 export default function cleanSet(set, startString) {
   const setRet = [];
-   if (!set || !startString || !(set instanceof Set) || typeof startString !== 'string') {
-	   return '';
-   }
+  if (startString === '' || typeof startString !== 'string') return '';
   set.forEach((s) => {
     if (typeof s === 'string' && s.startsWith(startString)) {
       setRet.push(s.slice(startString.length));
